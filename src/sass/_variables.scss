@@ -1,0 +1,29 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$alpha: rgb(62, 80, 85);
+$beta: rgb(56, 141, 168);
+
+$custom-colors: (
+    "alpha": $alpha,
+    "beta": $beta,
+);
+
+$theme-colors: map-merge($custom-colors , $theme-colors );
+
+$spacer: 0.5rem;
+
+@for $i from 1 through 50 {
+  $spacers: map-merge($spacers, ($i : $spacer * $i) );
+}
+
+$b-rounded: 20px;
+$b-rectangle: 5px;
+
+
+$border: 1px solid black;
+
+
+
+
+

@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "nunuto";
+    src: url("../../public/fonts/static/NunitoSans_10pt-Regular.ttf");
+}
+*{
+    padding: 0;
+    font-family: "nunuto" , serif;
+}
+@import "./modules/home/home";
