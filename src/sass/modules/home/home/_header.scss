@@ -1,0 +1,123 @@
+header {
+    padding-block: 0.6rem;
+    gap: 2rem;
+
+    .f-main-logo {
+        padding-right: 18.5rem;
+
+        .f-logo {
+            width: 2.5rem;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 2rem;
+
+        .f-nav-text {
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: #569eb5 !important;
+        }
+    }
+
+    button {
+        padding-block: 0.3rem;
+        padding-inline: 1rem;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        background-color: #569eb5 !important;
+    }
+}
+
+// for responsive .
+#menu,
+label {
+    display: none;
+}
+
+.f-close,
+.f-open {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding-block: 0;
+        gap: 0.5rem;
+
+        nav {
+            background-color: white;
+            position: fixed;
+            width: 90%;
+            right: -200%;
+            top: 3%;
+            transition: 0.5s;
+            flex-direction: column;
+            justify-content: start !important;
+            align-items: start !important;
+            gap: 1rem !important;
+            padding: 5vw !important;
+            z-index: 66666 !important;
+
+            label,
+            .f-close, {
+                display: block;
+            }
+
+            .f-close {
+                align-self: end;
+            }
+        }
+
+        .f-main-logo {
+            padding-right: 3.5rem;
+
+            .f-logo {
+                width: 1.5rem;
+            }
+        }
+
+        h1 {
+            font-size: 23px;
+        }
+
+        button {
+            padding-inline: 1.2rem;
+            padding-block: 0.4rem;
+            font-size: 0.8rem !important;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #menu:checked~.f-open {
+            display: none;
+        }
+
+        #menu:checked~nav {
+            right: 5%;
+        }
+
+        #menu:checked~.f-close {
+            display: block;
+        }
+    }
+
+    .f-open {
+        display: block;
+    }
+
+    .f-nav-text {
+        font-size: 1.5rem;
+    }
+}

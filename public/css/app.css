@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -29906,6 +29907,279 @@ textarea.form-control-lg {
   font-family: "nunuto", serif;
 }
 
+header {
+  padding-block: 0.6rem;
+  gap: 2rem;
+}
+header .f-main-logo {
+  padding-right: 18.5rem;
+}
+header .f-main-logo .f-logo {
+  width: 2.5rem;
+}
+header h1, header .h1 {
+  font-size: 30px;
+}
+header nav {
+  gap: 2rem;
+}
+header nav .f-nav-text {
+  font-size: 1rem;
+}
+header nav a:hover {
+  color: #569eb5 !important;
+}
+header button {
+  padding-block: 0.3rem;
+  padding-inline: 1rem;
+  font-size: 1rem;
+}
+header button:hover {
+  background-color: #569eb5 !important;
+}
+
+#menu,
+label {
+  display: none;
+}
+
+.f-close,
+.f-open {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-block: 0;
+    gap: 0.5rem;
+  }
+  header nav {
+    background-color: white;
+    position: fixed;
+    width: 90%;
+    right: -200%;
+    top: 3%;
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: start !important;
+    align-items: start !important;
+    gap: 1rem !important;
+    padding: 5vw !important;
+    z-index: 66666 !important;
+  }
+  header nav label,
+  header nav .f-close {
+    display: block;
+  }
+  header nav .f-close {
+    align-self: end;
+  }
+  header .f-main-logo {
+    padding-right: 3.5rem;
+  }
+  header .f-main-logo .f-logo {
+    width: 1.5rem;
+  }
+  header h1, header .h1 {
+    font-size: 23px;
+  }
+  header button {
+    padding-inline: 1.2rem;
+    padding-block: 0.4rem;
+    font-size: 0.8rem !important;
+  }
+  header #menu {
+    display: none;
+  }
+  header #menu:checked ~ .f-open {
+    display: none;
+  }
+  header #menu:checked ~ nav {
+    right: 5%;
+  }
+  header #menu:checked ~ .f-close {
+    display: block;
+  }
+  .f-open {
+    display: block;
+  }
+  .f-nav-text {
+    font-size: 1.5rem;
+  }
+}
+#feautures {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+#feautures .i-tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#feautures .i-tittle h3, #feautures .i-tittle .h3 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+}
+#feautures .i-tittle .i-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #348ea7;
+  margin: 5px auto;
+}
+#feautures .i-father {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+#feautures .i-father .i-son {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#feautures .i-father .i-son .i-grandson1, #feautures .i-father .i-son .i-grandson2, #feautures .i-father .i-son .i-grandson3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#feautures .i-father .i-son .i-grandson1 p, #feautures .i-father .i-son .i-grandson2 p, #feautures .i-father .i-son .i-grandson3 p {
+  font-size: smaller;
+}
+#feautures .i-father .i-son .i-grandson1 i, #feautures .i-father .i-son .i-grandson2 i, #feautures .i-father .i-son .i-grandson3 i {
+  background-color: var(--surface-color);
+  color: rgb(56, 141, 168);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#feautures .i-father .i-son .i-grandson1 {
+  background-color: #f2f7f9;
+  padding-inline: 1rem;
+}
+#feautures .i-father .i-son .i-grandson2, #feautures .i-father .i-son .i-grandson3 {
+  padding-inline: 1rem;
+}
+#feautures .i-father .i-son .i-grandson2:hover {
+  background-color: #f2f7f9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#feautures .i-father .i-son .i-grandson3:hover {
+  background-color: #f2f7f9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#feautures .i-son2 {
+  background-color: #f2f7f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+#feautures .i-son2 h2, #feautures .i-son2 .h2 {
+  font-size: 22px;
+}
+#feautures .i-son2 p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+#feautures .i-btn {
+  display: inline-block;
+  background-color: #388da8;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+#feautures .i-father2 {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+}
+#feautures .i-son3 {
+  background-color: #f2f7f9;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+#feautures .i-son3 h2, #feautures .i-son3 .h2 {
+  font-size: 22px;
+}
+#feautures .i-son3 p {
+  font-size: 16px;
+}
+#feautures .i-icon-list {
+  list-style: none;
+  padding: 0;
+}
+#feautures .i-icon {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+#feautures .i-icon i {
+  color: #348ea7;
+  padding-right: 8px;
+  font-size: 20px;
+}
+#feautures .i-father3 {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #feautures {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+  #feautures .i-tittle {
+    padding: 10px;
+  }
+  #feautures .i-father {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #feautures .i-father .i-son {
+    width: 90%;
+  }
+  #feautures .i-father img {
+    width: 90%;
+  }
+  #feautures .i-father2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #feautures .i-father2 .rounded {
+    width: 90%;
+  }
+  #feautures .i-father2 .i-son2 {
+    width: 90%;
+  }
+  #feautures .i-father3 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  #feautures .i-father3 .rounded {
+    width: 90%;
+  }
+  #feautures .i-father3 .i-son3 {
+    width: 90%;
+  }
+}
 #Questions {
   width: 100%;
   height: 100vh;

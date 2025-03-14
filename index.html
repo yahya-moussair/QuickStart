@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>QuickStart - Home</title>
     <link rel="stylesheet" href="./public/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./public/images/favicon.png" type="image/svg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,8 +18,56 @@
 
 <body>
     <!-- nav bar by youssef -->
-    <header>
-        
+    <header class="d-flex align-items-center justify-content-center">
+        <a class="d-flex align-items-center justify-content-center gap-1 f-main-logo" href="#">
+            <img class="f-logo" src="./public/images/logo.png" alt="QuickStart-logo">
+            <h1 class="text-alpha pb-2">QuickStart</h1>
+        </a>
+
+        <input type="checkbox" name="" id="menu">
+
+
+        <nav class="d-flex align-items-center justify-content-center">
+
+            <label class="f-close" for="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </label>
+
+            <a class="text-alpha f-nav-text" href="#">Home</a>
+            <a class="text-alpha f-nav-text" href="#">About</a>
+            <a class="text-alpha f-nav-text" href="#">Features</a>
+            <a class="text-alpha f-nav-text" href="#">Services</a>
+            <a class="text-alpha f-nav-text" href="#">Pricing</a>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-alpha f-nav-text" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                    <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                </ul>
+            </div>
+            </ul>
+            <a class="text-alpha f-nav-text" href="#">Contact</a>
+
+        </nav>
+
+        <button class="rounded-pill bg-beta border-0 text-light fw-light f-nav-btn">Get Started</button>
+
+        <label class="f-open" for="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </label>
     </header>
 
     <main>
@@ -32,11 +81,61 @@
         </section>
         <!-- feautures by ilyass -->
         <section id="feautures" class="container mb-4">
-
+           <div class="i-tittle">
+            <h3>Features</h3>
+            <div class="i-underline"></div>
+            <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+           </div>
+            <div class="i-father">
+                <div class="i-son">
+                    <div class="i-grandson1 d-flex rounded">
+                        <i class="bi bi-binoculars"></i>
+                        <div class="i-greatson1">
+                            <b class="m-0" >Modi sit est dela pireda nest</b >
+                            <p class="text-left" >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                    </div>
+                    <div class="i-grandson2 d-flex ">
+                        <i class="bi bi-box-seam"></i>
+                        <div class="i-greatson2">
+                            <b >Modi sit est dela pireda nest</b >
+                            <p class="text-right" >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                    </div>
+                    <div class="i-grandson3 d-flex ">
+                        <i class="bi bi-brightness-high"></i>
+                        <div class="i-greatson3">
+                            <b >Modi sit est dela pireda nest</b >
+                            <p class="text-right">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                        </div>
+                    </div>
+                </div>
+                <img width="50%" height="50%" class="rounded" src="./public/images/tabs-1.jpg" alt="">
+            </div>
+            <div class="i-father2">
+                <img  width="50%" height="50%"  class="rounded" src="./public/images/features-1.jpg" alt="">
+                <div class="i-son2">
+                    <h2>Corporis temporibus maiores provident</h2>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <button class="i-btn">Learn More</button>
+                </div>
+            </div>
+            <div class="i-father3">
+                <div class="i-son3">
+                    <h2>Neque ipsum omnis sapiente quod quia dicta</h2>
+                    <p>Quidem qui dolore incidunt aut. In harum id justo labore plasico mares.</p>
+                    <ul class="i-icon-list">
+                        <li class="i-icon"><i class="bi bi-easel flex-shrink-0"></i> Et corporis ea eveniet ducimus.</li>
+                        <li class="i-icon"><i class="bi bi-patch-check flex-shrink-0"></i> Exercitationem dolorem sapiente.</li>
+                        <li class="i-icon"><i class="bi bi-brightness-high flex-shrink-0"></i> Veniam quia modi magnam.</li>
+                    </ul>
+                    <button class="i-btn">Learn More</button>
+                </div>
+                <img width="50%" height="50%"  class="rounded" src="./public/images/features-2.jpg" alt="">
+            </div>
         </section>
         <!-- services by ilyass -->
         <section id="services">
-
         </section>
         <!-- pricing by youssef -->
         <section id="pricing" class="container mb-4">
@@ -128,7 +227,7 @@
     </main>
     <!-- footer by yahya + back to top button-->
     <footer id="footer">
-        
+
     </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
