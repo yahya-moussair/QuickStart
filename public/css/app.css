@@ -30107,7 +30107,144 @@ label {
     font-size: 1.5rem;
   }
 }
-#feautures {
+.y-hero-section .back-image {
+  background-image: url("../../../../../../public/images/hero-bg-light.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.y-hero-section div h1, .y-hero-section div .h1 {
+  font-size: 48px !important;
+}
+.y-hero-section div p {
+  font-size: 20px !important;
+}
+.y-hero-section div button, .y-hero-section div .watch-video {
+  border: none !important;
+  cursor: pointer !important;
+  transition: 0.5s;
+}
+.y-hero-section div .watch-video {
+  outline: none !important;
+  border: none !important;
+  background: none;
+}
+.y-hero-section div button:nth-child(1):hover {
+  opacity: 1 !important;
+}
+.y-hero-section div .watch-video:hover {
+  color: rgb(56, 141, 168) !important;
+}
+.y-hero-section img {
+  width: 40vw !important;
+}
+
+.y-cards {
+  cursor: pointer;
+}
+.y-cards i {
+  background-color: rgb(198, 229, 235);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.y-cards div:hover i {
+  background-color: rgb(56, 141, 168);
+  color: white !important;
+}
+.y-cards div h4, .y-cards div .h4 {
+  font-size: 18px !important;
+  cursor: pointer !important;
+  transition: 0.5s;
+}
+.y-cards div h4:hover, .y-cards div .h4:hover {
+  color: rgb(56, 141, 168) !important;
+}
+.y-cards div p {
+  font-size: 14px !important;
+  line-height: normal;
+}
+
+@media (max-width: 480px) {
+  .y-hero-section div h1, .y-hero-section div .h1 {
+    font-size: 28px !important;
+  }
+  .y-hero-section div p {
+    font-size: 18px !important;
+  }
+  .y-hero-section img {
+    width: 90vw !important;
+  }
+}
+.y-about div div p {
+  font-size: 16px;
+}
+.y-about div div div h2, .y-about div div div .h2 {
+  font-size: 32px;
+}
+.y-about div div div p {
+  font-size: 16px;
+  line-height: normal;
+}
+.y-about div div div ul > li {
+  list-style-type: none;
+  font-size: 16px !important;
+}
+.y-about div div div ul > li > i {
+  padding: 4px;
+  border-radius: 50%;
+  border: 0.5px solid rgb(56, 141, 168);
+  color: rgb(56, 141, 168);
+}
+.y-about div div button {
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.y-about div div button:hover {
+  filter: brightness(125%);
+}
+.y-about div div div img {
+  width: 20vw !important;
+  border-radius: 10px;
+}
+.y-about .y-clients-div div img {
+  width: 8vw !important;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.y-about .y-clients-div div img:hover {
+  filter: none;
+}
+
+@media (max-width: 480px) {
+  .y-about div div {
+    width: 100% !important;
+    margin-bottom: 2rem !important;
+  }
+  .y-about div div button {
+    width: 35% !important;
+  }
+  .y-about div div div img {
+    width: 100% !important;
+  }
+  .y-about div div div .about-image-1 {
+    margin-bottom: 0rem !important;
+  }
+  .y-about .y-clients-div div img {
+    width: 25vw !important;
+    filter: none;
+  }
+}
+#features {
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -30874,51 +31011,6 @@ button > span {
     color: #fff;
   }
 }
-.y-testimonials h3, .y-testimonials .h3 {
-  position: relative;
-  font-size: 32px;
-}
-.y-testimonials h3::before, .y-testimonials .h3::before {
-  content: "";
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  height: 4px;
-  width: 4vw;
-  background-color: rgb(56, 141, 168);
-  border-radius: 20px;
-}
-.y-testimonials .y-desc-div {
-  font-size: 16px;
-}
-.y-testimonials .carousel .container {
-  height: 70vh !important;
-}
-.y-testimonials .carousel .container img {
-  border-radius: 50% !important;
-}
-.y-testimonials .carousel .carousel-control-next {
-  right: 20vw !important;
-}
-.y-testimonials .carousel .carousel-control-prev {
-  left: 20vw !important;
-}
-
-@media (max-width: 480px) {
-  .y-testimonials .y-desc-div {
-    width: 75% !important;
-  }
-  .y-testimonials .carousel .container {
-    width: 90vw !important;
-  }
-  .y-testimonials .carousel .carousel-control-next {
-    right: 1vw !important;
-  }
-  .y-testimonials .carousel .carousel-control-prev {
-    left: 1vw !important;
-  }
-}
 footer .y-footer-nav {
   position: relative;
   padding-bottom: 3vh;
@@ -30973,7 +31065,7 @@ footer form button:hover {
     display: none;
   }
   .y-quick-title {
-    padding-top: vh !important;
+    padding-top: 8vh !important;
   }
 }
 

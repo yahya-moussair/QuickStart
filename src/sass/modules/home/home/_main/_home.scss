@@ -21,15 +21,20 @@
         }
     }
     div{
-        button{
+        button, .watch-video{
             border: none !important;
             cursor: pointer !important;
             transition: 0.5s;
         }
+        .watch-video {
+            outline: none !important;
+            border: none !important;
+            background: none;
+        }
         button:nth-child(1):hover{
             opacity: 1 !important;
         }
-        button:nth-child(2):hover{
+        .watch-video:hover{
             color: $beta !important;
         }
     }
