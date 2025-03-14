@@ -3,10 +3,12 @@
 
 $alpha: rgb(62, 80, 85);
 $beta: rgb(56, 141, 168);
+$testimonials: rgb(247, 251, 252);
 
 $custom-colors: (
     "alpha": $alpha,
     "beta": $beta,
+    "testimonials": $testimonials,
 );
 
 $theme-colors: map-merge($custom-colors , $theme-colors );
