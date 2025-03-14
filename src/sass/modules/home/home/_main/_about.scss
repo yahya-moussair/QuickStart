@@ -1,0 +1,98 @@
+.y-about{
+    div{
+        div{
+            p{
+                font-size: 16px;
+            }
+            div{
+                h2{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: normal;
+                }
+                ul > li{
+                    list-style-type: none;
+                    font-size: 16px !important;
+                }
+                ul > li > i{
+                    padding: 4px;
+                    border-radius: 50%;
+                    border: 0.5px solid $beta;
+                    color: $beta;
+                }
+            }
+            button{
+                font-size: 16px;
+                border: none;
+                border-radius: $b-rectangle;
+                transition: 0.5s;
+            }
+            button:hover{
+                filter: brightness(125%);
+            }
+        }
+    }
+    div{
+        div{
+            div{
+                img{
+                    width: 20vw !important;
+                    border-radius: 10px;
+                }
+                
+            }
+        }
+    }
+    .y-clients-div{
+        div{
+            img{
+                width: 8vw !important;
+                filter: grayscale(100%);
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            img:hover{
+                filter: none;
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    .y-about{
+        div{
+            div{
+                width: 100% !important;
+                margin-bottom: 2rem !important;
+
+                button{
+                    width: 35% !important;
+                }
+            }
+        }
+        div{
+            div{
+                div{
+                    img{
+                        width: 100% !important;
+                    }
+                    .about-image-1{
+                        margin-bottom: 0rem !important;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .y-about{
+        .y-clients-div{
+            div{
+                img{
+                    width: 25vw !important;
+                    filter: none;
+                }
+            }
+        }
+    }
+}

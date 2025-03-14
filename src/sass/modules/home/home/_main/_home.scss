@@ -1,0 +1,80 @@
+.y-hero-section{
+    .back-image{
+        background-image: url("../../../../../../public/images/hero-bg-light.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: opacity(0.2);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    div{
+        h1{
+            font-size: 48px !important;
+        }
+        p{
+            font-size: 20px !important;
+        }
+    }
+    div{
+        button{
+            border: none !important;
+            cursor: pointer !important;
+            transition: 0.5s;
+        }
+        button:nth-child(1):hover{
+            opacity: 1 !important;
+        }
+        button:nth-child(2):hover{
+            color: $beta !important;
+        }
+    }
+    img{
+        width: 40vw !important;
+    }
+}
+.y-cards{
+    cursor: pointer;
+    i{
+        background-color: rgb(198, 229, 235);
+        border-radius: $b-rectangle;
+        transition: 0.5s;
+    }
+    div:hover i{
+        background-color: $beta;
+        color: white !important;
+    }
+    div{
+        h4{
+            font-size: 18px !important;
+            cursor: pointer !important;
+            transition: 0.5s;
+        }
+        h4:hover{
+            color: $beta !important;
+        }
+        p{
+            font-size: 14px  !important;
+            line-height: normal;
+        }
+    }
+}
+@media (max-width:480px){
+    .y-hero-section{
+        div{
+            h1{
+                font-size: 28px !important;
+            }
+            p{
+                font-size: 18px !important;
+            }
+        }
+        img{
+            width: 90vw !important;
+        }
+    }
+}
