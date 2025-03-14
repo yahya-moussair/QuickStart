@@ -30553,6 +30553,9 @@ label {
     align-items: center;
     justify-content: center;
   }
+  #Questions .questions-content .section-title > h3, #Questions .questions-content .section-title > .h3 {
+    text-align: center;
+  }
 }
 .y-testimonials h3, .y-testimonials .h3 {
   position: relative;
