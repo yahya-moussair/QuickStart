@@ -1,0 +1,52 @@
+.y-testimonials{
+    h3{
+        position: relative;
+        font-size: 32px;
+    }
+    h3::before{
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate( -50% , 50%);
+        height: 4px;
+        width: 4vw;
+        background-color: $beta;
+        border-radius: 20px;
+    }
+    .y-desc-div{
+        font-size: 16px;
+    }
+    .carousel{
+        .container{
+            height: 70vh !important;
+            img{
+                border-radius: 50% !important;
+            }
+        }
+        .carousel-control-next{
+            right: 20vw !important;
+        }
+        .carousel-control-prev{
+            left: 20vw !important;
+        }
+    }
+}
+@media (max-width:480px){
+    .y-testimonials{
+        .y-desc-div{
+            width: 75% !important;
+        }
+        .carousel{
+            .container{
+                width: 90vw !important;
+            }
+            .carousel-control-next{
+                right: 1vw !important;
+            }
+            .carousel-control-prev{
+                left: 1vw !important;
+            }
+        }
+    }
+}

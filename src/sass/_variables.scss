@@ -1,12 +1,14 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
-$alpha: #3e5055;
-$beta: #388da8;
+$alpha: rgb(62, 80, 85);
+$beta: rgb(56, 141, 168);
+$testimonials: rgb(247, 251, 252);
 
 $custom-colors: (
     "alpha": $alpha,
     "beta": $beta,
+    "testimonials": $testimonials,
 );
 
 $theme-colors: map-merge($custom-colors , $theme-colors );
