@@ -29,8 +29,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-alpha: rgb(62, 80, 85);
-  --bs-beta: rgb(56, 141, 168);
+  --bs-alpha: #3e5055;
+  --bs-beta: #388da8;
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
@@ -5222,8 +5222,8 @@ textarea.form-control-lg {
 
 .btn-alpha {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgb(62, 80, 85);
-  --bs-btn-border-color: rgb(62, 80, 85);
+  --bs-btn-bg: #3e5055;
+  --bs-btn-border-color: #3e5055;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: rgb(52.7, 68, 72.25);
   --bs-btn-hover-border-color: rgb(49.6, 64, 68);
@@ -5233,14 +5233,14 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(46.5, 60, 63.75);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgb(62, 80, 85);
-  --bs-btn-disabled-border-color: rgb(62, 80, 85);
+  --bs-btn-disabled-bg: #3e5055;
+  --bs-btn-disabled-border-color: #3e5055;
 }
 
 .btn-beta {
   --bs-btn-color: #000;
-  --bs-btn-bg: rgb(56, 141, 168);
-  --bs-btn-border-color: rgb(56, 141, 168);
+  --bs-btn-bg: #388da8;
+  --bs-btn-border-color: #388da8;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: rgb(85.85, 158.1, 181.05);
   --bs-btn-hover-border-color: rgb(75.9, 152.4, 176.7);
@@ -5250,8 +5250,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(75.9, 152.4, 176.7);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: rgb(56, 141, 168);
-  --bs-btn-disabled-border-color: rgb(56, 141, 168);
+  --bs-btn-disabled-bg: #388da8;
+  --bs-btn-disabled-border-color: #388da8;
 }
 
 .btn-primary {
@@ -5391,36 +5391,36 @@ textarea.form-control-lg {
 }
 
 .btn-outline-alpha {
-  --bs-btn-color: rgb(62, 80, 85);
-  --bs-btn-border-color: rgb(62, 80, 85);
+  --bs-btn-color: #3e5055;
+  --bs-btn-border-color: #3e5055;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgb(62, 80, 85);
-  --bs-btn-hover-border-color: rgb(62, 80, 85);
+  --bs-btn-hover-bg: #3e5055;
+  --bs-btn-hover-border-color: #3e5055;
   --bs-btn-focus-shadow-rgb: 62, 80, 85;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgb(62, 80, 85);
-  --bs-btn-active-border-color: rgb(62, 80, 85);
+  --bs-btn-active-bg: #3e5055;
+  --bs-btn-active-border-color: #3e5055;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(62, 80, 85);
+  --bs-btn-disabled-color: #3e5055;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(62, 80, 85);
+  --bs-btn-disabled-border-color: #3e5055;
   --bs-gradient: none;
 }
 
 .btn-outline-beta {
-  --bs-btn-color: rgb(56, 141, 168);
-  --bs-btn-border-color: rgb(56, 141, 168);
+  --bs-btn-color: #388da8;
+  --bs-btn-border-color: #388da8;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(56, 141, 168);
-  --bs-btn-hover-border-color: rgb(56, 141, 168);
+  --bs-btn-hover-bg: #388da8;
+  --bs-btn-hover-border-color: #388da8;
   --bs-btn-focus-shadow-rgb: 56, 141, 168;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(56, 141, 168);
-  --bs-btn-active-border-color: rgb(56, 141, 168);
+  --bs-btn-active-bg: #388da8;
+  --bs-btn-active-border-color: #388da8;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgb(56, 141, 168);
+  --bs-btn-disabled-color: #388da8;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgb(56, 141, 168);
+  --bs-btn-disabled-border-color: #388da8;
   --bs-gradient: none;
 }
 
@@ -29904,6 +29904,34 @@ textarea.form-control-lg {
 * {
   padding: 0;
   font-family: "nunuto", serif;
+}
+
+#Questions {
+  width: 100%;
+  height: 100vh;
+}
+#Questions .questions-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Questions .questions-content .section-title > h3, #Questions .questions-content .section-title > .h3 {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #Questions {
+    width: 100%;
+    height: 100vh;
+  }
+  #Questions .questions-content {
+    padding-inline: 1rem;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
